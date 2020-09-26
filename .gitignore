@@ -1,0 +1,2 @@
+#Ignoring amazon product review dataset, being its bigger than what git supports
+/2_nlp-and-ml-foundation/1_amazon-food-review-rating/dataset

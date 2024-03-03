@@ -99,3 +99,8 @@ Here ML pridication can be made as with so and so features, on what price house 
     - Self Driving cars
     - Games
 
+### Quick checks?
+- Which keyboard shortcut in Jupyter can you use to run the current cell and then select the cell below? :- Shift + Enter
+- What is the name of the popular Python distribution platform used by many data scientists? :- Anaconda
+- Which of the following deep learning applications is most often associated with reinforcement learning? :- Video Game AI development
+- Which python libraries provides a high-level API to run machine learning experiments using deep learning? :- Keras

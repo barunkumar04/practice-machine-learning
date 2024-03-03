@@ -84,3 +84,18 @@ Here ML pridication can be made as with so and so features, on what price house 
     <summary><i>Collection of decision trees</i></summary><br>
     <img align="center" alt="AI vs ML vs DL" src="resources/images/KNN.png" />
 </details>
+
+## Data & ML - An Intro
+
+### Deep Learning real world application
+    - Image objects identification
+    - Photo caption generation
+    - Facebook's Deep Face: A face recognition AI
+    - For blinds: Audio generation from camara etc
+    - Real time language translation from photo
+    - Real tme language translation of over call/chat etc
+    - Smart Reply
+    - Automatic Ratinal Disease Assesment
+    - Self Driving cars
+    - Games
+

@@ -88,16 +88,16 @@ Here ML pridication can be made as with so and so features, on what price house 
 ## Data & ML - An Intro
 
 ### Deep Learning real world application
-    - Image objects identification
-    - Photo caption generation
-    - Facebook's Deep Face: A face recognition AI
-    - For blinds: Audio generation from camara etc
-    - Real time language translation from photo
-    - Real tme language translation of over call/chat etc
-    - Smart Reply
-    - Automatic Ratinal Disease Assesment
-    - Self Driving cars
-    - Games
+- Image objects identification
+- Photo caption generation
+- Facebook's Deep Face: A face recognition AI
+- For blinds: Audio generation from camara etc
+- Real time language translation from photo
+- Real tme language translation of over call/chat etc
+- Smart Reply
+- Automatic Ratinal Disease Assesment
+- Self Driving cars
+- Games
 
 ### Quick checks?
 - Which keyboard shortcut in Jupyter can you use to run the current cell and then select the cell below? :- Shift + Enter
@@ -108,32 +108,39 @@ Here ML pridication can be made as with so and so features, on what price house 
 ## Machine Learning
 
 ### Week and Strong AI
-    - Week AI: Highly specilized in solving specific probelm
-    - Strong AI: Solves general problem
+- Week AI: Highly specilized in solving specific probelm
+- Strong AI: Solves general problem
 
 ### ML Notions 
-    - y
-        - Historical targets
-        - The label
-        - Ex - Daily sale of the shop when 20% discount is was given
-    - x
-        - A Single feature
-        - Ex - Location of the shop
-    - X
-        - Multiple features
-        - Ex - % discounts on product, # of hours hours open etc
-    - D 
-        - Training Dataset
-        - Represented as: All the features we have/know and historrical observations
-        - I.e. D = (X, y)
-    - ŷ
-        - y-hat
-        - a guess of y
-    - f
-        - The relationship b/w all the x we have and the historical data we have
-        - I.e. ŷ = f(x)
+- y
+    - Historical targets
+    - The label
+    - Ex - Daily sale of the shop when 20% discount is was given
+- x
+    - A Single feature
+    - Ex - Location of the shop
+- X
+    - Multiple features
+    - Ex - % discounts on product, # of hours hours open etc
+- D 
+    - Training Dataset
+    - Represented as: All the features we have/know and historrical observations
+    - I.e. D = (X, y)
+- ŷ
+    - y-hat
+    - a guess of y
+- f
+    - The relationship b/w all the x we have and the historical data we have
+    - I.e. ŷ = f(x)
 
 > [ RECAP ]   
 **Superwised Learning:** When lebel or y or historical outcomes is given. 
 **Unsuperwised Learning**: When lebel or y or historical outcomes is not given.
 
+### Supervised Learning problems
+- Regression 
+    - y ∈ set of real numbers
+    - Ex: Age, Rating, temperature
+- Classification
+    - y ∈ {0, 1}
+    - Ex: Old or young, good or bad, Summer or winter

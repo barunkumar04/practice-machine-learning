@@ -104,3 +104,36 @@ Here ML pridication can be made as with so and so features, on what price house 
 - What is the name of the popular Python distribution platform used by many data scientists? :- Anaconda
 - Which of the following deep learning applications is most often associated with reinforcement learning? :- Video Game AI development
 - Which python libraries provides a high-level API to run machine learning experiments using deep learning? :- Keras
+
+## Machine Learning
+
+### Week and Strong AI
+    - Week AI: Highly specilized in solving specific probelm
+    - Strong AI: Solves general problem
+
+### ML Notions 
+    - y
+        - Historical targets
+        - The label
+        - Ex - Daily sale of the shop when 20% discount is was given
+    - x
+        - A Single feature
+        - Ex - Location of the shop
+    - X
+        - Multiple features
+        - Ex - % discounts on product, # of hours hours open etc
+    - D 
+        - Training Dataset
+        - Represented as: All the features we have/know and historrical observations
+        - I.e. D = (X, y)
+    - ŷ
+        - y-hat
+        - a guess of y
+    - f
+        - The relationship b/w all the x we have and the historical data we have
+        - I.e. ŷ = f(x)
+
+> [ RECAP ]   
+**Superwised Learning:** When lebel or y or historical outcomes is given. 
+**Unsuperwised Learning**: When lebel or y or historical outcomes is not given.
+

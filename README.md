@@ -144,3 +144,36 @@ Here ML pridication can be made as with so and so features, on what price house 
 - Classification
     - y ∈ {0, 1}
     - Ex: Old or young, good or bad, Summer or winter
+
+## Distributed Machine Learning
+- Motive
+    - Large Dataset
+    - Speed
+    - Complexity
+    - Accuracy
+- Apache Spark
+    - A lightning fast, cluster computing used to provide capability of distributed computing
+    - Built on Scala
+    -  <details>
+            <summary>Spark stack</summary>
+            <img src="resources/images/SparkStack.png">
+        </details>
+    - <details>
+            <summary>Spark master-slave architecture</summary>
+            <img src="resources/images/SparkMasterSlave.png">
+        </details>
+    - Abstractions: RDD (2011) > Dataframe (2013) >  Dataset (2015)
+    
+- Apache Spark MLib
+    - Spark's scalable ML library
+    - <details>
+            <summary>MLib Agorithms</summary>
+            <img src="resources/images/MLibAlgo.png">
+        </details>
+- Decision Trees
+    - A ML model, in form of tree structure
+    - Types
+        - Classification Tree
+            - Person in rich, Will it rain tomorrow etc
+        - Regression Tree
+            - Someone's income, Stock Price etc

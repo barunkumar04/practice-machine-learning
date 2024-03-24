@@ -238,3 +238,36 @@ Here ML pridication can be made as with so and so features, on what price house 
  - AlexNet: Image Classification, deeper and compute intense than LeNet-5
  - GoogLeNet: Even Deepar, but better performance. Introduced  'Inception Module' (Group of convolutional Layers)
  - ResNet (Residual Network): Even deepar, maintains 'skip connections' 
+
+ ### RNN
+
+ #### What are they used for?
+ - Time series data. 
+    - Pridict future based on past data
+    - Web Log, Sensor Log, Stock Trade
+ - Data that consist of sequence of arbitrary length
+    - Machine Translation
+    - Image Caption
+    - Machine Generated Music
+
+#### How does RNN work?  
+<details>
+    <summary><i>expand...</i></summary><br>
+    <img align="center" alt="AI vs ML vs DL" src="resources/images/RNNWorking.png" />
+</details>
+
+<details>
+    <summary><i>Horizontal Scaling</i></summary><br>
+    <img align="center" alt="AI vs ML vs DL" src="resources/images/RNNWorking_HorizontalScaling.png" />
+</details>
+
+#### RNN Topologies
+- Sequence to Sequence
+    - Predict stock price based on historical data
+- Sequence to Vector
+    - Words in sentance to sentiment
+- Vector to Sequence
+    - generate caption from image
+- Encoder Decoder
+    - Sequnce -> Vector -> Sequence
+    - Eg, Machine Translation

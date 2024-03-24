@@ -177,3 +177,64 @@ Here ML pridication can be made as with so and so features, on what price house 
             - Person in rich, Will it rain tomorrow etc
         - Regression Tree
             - Someone's income, Stock Price etc
+
+## AWS ML Services [TODO]
+### S3
+- Backbone of AWS ML services, like SageMaker
+- Used of creating Data Lake
+- 5 TB is max support
+- 11 nines durability, 99.999999999%
+- 
+
+## Deep Learning
+
+### Types of Neural Network
+- Feedforward Neural Network
+    - A stack of neural network, where input is fed into bottom and prediction is generated.
+- Convolutional Neural Network (CNN)
+    - Used in inage classification
+    - Ex, Is there a question mark in image?
+- Recurrent Neural Network (RNN)
+    - Deals with sequences
+    - Ex, Predict stock price, translation etc
+    - LTSM and GRU are difrent flavours of RNN
+
+### CNN
+#### What are they used for?
+- When data is not neatly align with columns
+    - Language Translation
+    - Sentence Classification, question or request
+    - Sentiment Analysis
+- CNN can be used for finding a feature when its not aon a specific sopt
+    - A 'STOP' sign in a picture
+    - A word in a sentence
+
+#### How does CNN work?
+- Convolution is way of saying - I am going to breakup data in to little chunks and process those chunks individdually.
+- CNN working is inspired by biology of how human identify things.
+- How does CNN identify a 'STOP' sign?
+    - Input image is chunked out and passed on to a group of neural network 'to identify lines'.
+    - Passed on on another neural network, to idenify alignments of those lines
+    - Then, to find out colors
+    - So on, and at the end combined up to get
+        - There is octagonal shape
+        - Having more red in it
+        - Written letter 'S' 'T' 'O' 'P' in it in same sequence.
+    - Here is the result!
+
+#### CNN with TensorFlow/Keras
+- Source Data: Wedth  x Height X Color channels 
+- Conv2D layer: Does actual convolutining on a 2D data.
+    - Conv1D and conv3D is also availale - Need not to be image
+- MaxPooling2D: Can be used for reducing a 2D layer down. To help performance capability
+- Flatten Layer: 2D to 1D
+
+> [Typical Usages]   
+ Conv2D > MaxPooling2D > Flatten > Dense > Dropout > SoftMax
+
+ #### Specilized CNN Architecture
+ - Define specific arrangements of layers, padding, hyperparameters
+ - LeNet-5: Good for handwriting recognition
+ - AlexNet: Image Classification, deeper and compute intense than LeNet-5
+ - GoogLeNet: Even Deepar, but better performance. Introduced  'Inception Module' (Group of convolutional Layers)
+ - ResNet (Residual Network): Even deepar, maintains 'skip connections' 

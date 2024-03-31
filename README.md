@@ -271,3 +271,47 @@ Here ML pridication can be made as with so and so features, on what price house 
 - Encoder Decoder
     - Sequnce -> Vector -> Sequence
     - Eg, Machine Translation
+
+### Tranfer Learning
+    - It can very cumbersome and costly to build a model from scratch and train every time, as modal can be too big.
+    - 'Hugging Face' is a pre-train model repository. We can use modal as we want and can be fine tune as well.
+    - These pre-train model are considered as transfer learning.
+    - 'Hugging Face' is integrated with AWS SageMaker
+
+### Tuning Neural Netwrok
+-  Learning Rate
+    - Neural Network are trained by 'Gradiant Decendent' or similar means
+    - Start with some random point & sample diffrent solution; seeking to minimize some cost funtion over many epochs
+    - <details>
+            <summary><i>More on LR</i></summary><br>
+            <img align="center" alt="AI vs ML vs DL" src="resources/images/LearningRate.png" />
+    </details>
+- Batch Size
+    - Number of training sample are using in each batch of each epoch.
+    - [IMP] Smaller the batch size = Better
+
+
+
+
+## AWS SageMaker
+- Seq2Seq
+    - Input is sequence of token and output is sequence of token
+    - Implemmted with CNN And RNN.
+    - Example: Speach to Text, Text Summarization etc
+    - BLUE Score and Preplexity is best suited for ML Translation.
+- DeepAR
+    - Forcasting 1-Dimensional time series data
+    - Example - Stock Price
+- BlazeingText 
+    - Predict labal of a sentance; mind it - not entire document
+    - Input
+        - '\__label__\' is important in input. 
+        -  __label__4  linux ready for prime time , intel says , despite all the linux hype , the open-source movement has yet to make a huge splash in the desktop market . that may be about to change , thanks to chipmaking giant intel corp .
+        - __label__2  bowled by the slower one again , kolkata , november 14 the past caught up with sourav ganguly as the indian skippers return to international cricket was short lived . 
+- Object2Vec
+    - A general purpose version of Word2Vec
+    - Compute nearest neighbour of objects
+    - Used to identifying similar items, user etc 
+    - Input
+        - Input data must be tokenized to integers
+        - 

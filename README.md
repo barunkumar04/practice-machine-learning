@@ -290,8 +290,23 @@ Here ML pridication can be made as with so and so features, on what price house 
     - Number of training sample are using in each batch of each epoch.
     - [IMP] Smaller the batch size = Better
 
+- Imp. points to remember
+    - Smaller batch tends NOT to get stuck in local minima.
+    - Larger batch size can converge on wrong solution at random
+    - Large LR can overshot the correct solution
+    - Small LR increase training time
 
 
+### Regulization technique
+    - Dropout
+    - Early Stopping
+    - TODO - Watch training video
+
+### L1 & L2 regulization
+    - TODO - Watch video
+
+### Confusion Matrix
+    - TODO - Watch video and notice Recall, Precision etc
 
 ## AWS SageMaker
 - Seq2Seq

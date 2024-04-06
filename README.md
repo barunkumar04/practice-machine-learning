@@ -327,6 +327,37 @@ Here ML pridication can be made as with so and so features, on what price house 
     - A general purpose version of Word2Vec
     - Compute nearest neighbour of objects
     - Used to identifying similar items, user etc 
-    - Input
-        - Input data must be tokenized to integers
-        - 
+    - <details>
+            <summary><i>Usages</i></summary><br>
+            <img align="center" alt="Object2Vec Usage" src="resources/images/Object2Vec_usages.png" /> </details>
+     - <details>
+            <summary><i>Training Input</i></summary><br>
+            <img align="center" alt="Object2Vec TrainingInput" src="resources/images/Object2Vec_usages.png" />
+    </details>
+- Object Detection
+    - <details>
+            <summary><i>Usages</i></summary><br>
+            <img align="center" alt="ObjectDetect_WhatFor" src="resources/images/ObjectDetect_WhatFor.png" /> </details>
+     - <details>
+            <summary><i>Training Input</i></summary><br>
+            <img align="center" alt="Training Input" src="resources/images/ObjectDetect_TrainingInput.png" />
+    </details>
+
+- Image Classification
+    - Used for naming object in an image, doesn't tell position etc.
+
+- Semantic Segmentation in SageMaker
+    - <details>
+            <summary><i>Usage</i></summary><br>
+            <img align="center" alt="Training Input" src="resources/images/SemSeg_WhatFor.png" />
+    </details>
+
+- Random cut forest: developed at Amazon
+    - Used for Anamoly detection.
+    - <details>
+            <summary><i>Usages</i></summary><br>
+            <img align="center" alt="Usages" src="resources/images/RandomCutForest.png" />
+    </details>
+
+    - Usages decision tree, under the hood.
+    - How anamonly get detected - Let's say to accomodate new data set, which is aanamoly, it required to add new set of branches in decision tree. That is an indication of anamoly 

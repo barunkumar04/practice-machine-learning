@@ -346,7 +346,7 @@ Here ML pridication can be made as with so and so features, on what price house 
 - Image Classification
     - Used for naming object in an image, doesn't tell position etc.
 
-- Semantic Segmentation in SageMaker
+- [IMP] Semantic Segmentation in SageMaker
     - <details>
             <summary><i>Usage</i></summary><br>
             <img align="center" alt="Training Input" src="resources/images/SemSeg_WhatFor.png" />
@@ -397,7 +397,7 @@ Here ML pridication can be made as with so and so features, on what price house 
             <summary><i>Exploration Problem</i></summary><br>
             <img align="center" alt="Usages" src="resources/images/ExplorationProblem.png" />
         </details>
-- Automatic Model Tuning
+- [IMP]Automatic Model Tuning
     - How do you know best value of Learning Rate, batch size, pth etc?
     - By experimenting? Possible then we have handful of hyperparameter. But, what if there are many different hyerparameters.
     - We can't try every combination of every possible value somehow, train a model, and evaluate every time.
@@ -406,3 +406,18 @@ Here ML pridication can be made as with so and so features, on what price house 
         - SageMaker spins up a 'HyperParameter Tuning Job', that trains many combinations you allowed
         - the set of hyperparameters producing best results, can then deployed as model
         - So, it can learn as it goes, so it doesn't have to try very possible combinations.
+    - Taking more time - Limit search space.
+- SageMaker Debugger
+    - Saves internal state at periodic level.
+    - Have reporting capabilities.
+- Autopilot / AutoML
+    - Automates:
+        - Algorithm selection
+        - Data Processing
+        - Model tuning
+        - All Infrastructure
+    - Does all the hit and trial
+- Which SageMaker algorithm would be best suited for identifying topics in text documents in an unsupervised setting?
+    - (LDA) Latent Dirichlet Allocation is a topic modeling technique. 
+    - (NTM) Neural Topic Model would also be a correct answer.
+- 

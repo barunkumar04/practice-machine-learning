@@ -361,3 +361,39 @@ Here ML pridication can be made as with so and so features, on what price house 
 
     - Usages decision tree, under the hood.
     - How anamonly get detected - Let's say to accomodate new data set, which is aanamoly, it required to add new set of branches in decision tree. That is an indication of anamoly 
+
+- PCA in SageMaker
+    - PCA (Principle Component Analysis) is a diamentionality reduction technique.
+    - so, if avoids crush of diamentionality
+    - A Higher dimentional data -> PCA -> 2D, without loosing much information
+    - Reduced dimensions are called componnets
+    - How its used:
+        - Covariance matrix is created
+        - then, SVD (Singular Value Decomposition) algo to distil that down
+        - Has two modes
+            - Regular: For sparse data and moderate number of observation and feature
+            - Randomized: For large # of overvation and feature, usaes complex algorithms.
+- Factorization Machines 
+    - Used for predicting a classification with a sparse test data.
+    - Example - Predicting which product from a huge product catelog will have sale etc
+
+- IP Insights
+    - Unupervised learning of IP address usage pattern
+    - Identifies suspicious behaviour from IP address, like login attemps, account creation etc
+    - Used as a security tool
+
+- Reinforcement Learning
+    - Example of Pac-man, where a right action is rewarded and wrong action gets penalized.
+    - Q-Learnig
+        - A Specific implementation of reinforcement learning
+        - We have:
+            - A Set of env. states - s
+            - A set of possible actions in those states - a
+            - A value of each state/action - Q
+        - Start with Q = 0
+        - Increment Q, when reward received on state/action
+        - Decrement Q, when bad things happe on state/action
+        - <details>
+            <summary><i>Exploration Problem</i></summary><br>
+            <img align="center" alt="Usages" src="resources/images/ExplorationProblem.png" />
+        </details>

@@ -309,115 +309,201 @@ Here ML pridication can be made as with so and so features, on what price house 
     - TODO - Watch video and notice Recall, Precision etc
 
 ## AWS SageMaker
-- Seq2Seq
-    - Input is sequence of token and output is sequence of token
-    - Implemmted with CNN And RNN.
-    - Example: Speach to Text, Text Summarization etc
-    - BLUE Score and Preplexity is best suited for ML Translation.
-- DeepAR
-    - Forcasting 1-Dimensional time series data
-    - Example - Stock Price
-- BlazeingText 
-    - Predict labal of a sentance; mind it - not entire document
-    - Input
-        - '\__label__\' is important in input. 
-        -  __label__4  linux ready for prime time , intel says , despite all the linux hype , the open-source movement has yet to make a huge splash in the desktop market . that may be about to change , thanks to chipmaking giant intel corp .
-        - __label__2  bowled by the slower one again , kolkata , november 14 the past caught up with sourav ganguly as the indian skippers return to international cricket was short lived . 
-- Object2Vec
-    - A general purpose version of Word2Vec
-    - Compute nearest neighbour of objects
-    - Used to identifying similar items, user etc 
-    - <details>
-            <summary><i>Usages</i></summary><br>
-            <img align="center" alt="Object2Vec Usage" src="resources/images/Object2Vec_usages.png" /> </details>
-     - <details>
-            <summary><i>Training Input</i></summary><br>
-            <img align="center" alt="Object2Vec TrainingInput" src="resources/images/Object2Vec_usages.png" />
+### Seq2Seq
+- Input is sequence of token and output is sequence of token
+- Implemmted with CNN And RNN.
+- Example: Speach to Text, Text Summarization etc
+- BLUE Score and Preplexity is best suited for ML Translation.
+### DeepAR
+- Forcasting 1-Dimensional time series data
+- Example - Stock Price
+### BlazeingText 
+- Predict labal of a sentance; mind it - not entire document
+- Input
+    - '\__label__\' is important in input. 
+    -  __label__4  linux ready for prime time , intel says , despite all the linux hype , the open-source movement has yet to make a huge splash in the desktop market . that may be about to change , thanks to chipmaking giant intel corp .
+    - __label__2  bowled by the slower one again , kolkata , november 14 the past caught up with sourav ganguly as the indian skippers return to international cricket was short lived . 
+### Object2Vec
+- A general purpose version of Word2Vec
+- Compute nearest neighbour of objects
+- Used to identifying similar items, user etc 
+- <details>
+        <summary><i>Usages</i></summary><br>
+        <img align="center" alt="Object2Vec Usage" src="resources/images/Object2Vec_usages.png" /> 
     </details>
-- Object Detection
-    - <details>
-            <summary><i>Usages</i></summary><br>
-            <img align="center" alt="ObjectDetect_WhatFor" src="resources/images/ObjectDetect_WhatFor.png" /> </details>
-     - <details>
-            <summary><i>Training Input</i></summary><br>
-            <img align="center" alt="Training Input" src="resources/images/ObjectDetect_TrainingInput.png" />
+- <details>
+        <summary><i>Training Input</i></summary><br>
+        <img align="center" alt="Object2Vec TrainingInput" src="resources/images/Object2Vec_usages.png" />
     </details>
 
-- Image Classification
-    - Used for naming object in an image, doesn't tell position etc.
+### Object Detection
+- <details>
+        <summary><i>Usages</i></summary><br>
+        <img align="center" alt="ObjectDetect_WhatFor" src="resources/images/ObjectDetect_WhatFor.png" /> </details>
+- <details>
+        <summary><i>Training Input</i></summary><br>
+        <img align="center" alt="Training Input" src="resources/images/ObjectDetect_TrainingInput.png" />
+</details>
 
-- [IMP] Semantic Segmentation in SageMaker
-    - <details>
-            <summary><i>Usage</i></summary><br>
-            <img align="center" alt="Training Input" src="resources/images/SemSeg_WhatFor.png" />
+### Image Classification
+- Used for naming object in an image, doesn't tell position etc.
+
+### [IMP] Semantic Segmentation in SageMaker
+- <details>
+        <summary><i>Usage</i></summary><br>
+        <img align="center" alt="Training Input" src="resources/images/SemSeg_WhatFor.png" />
     </details>
 
-- Random cut forest: developed at Amazon
-    - Used for Anamoly detection.
+### Random cut forest: developed at Amazon
+- Used for Anamoly detection.
+- <details>
+        <summary><i>Usages</i></summary><br>
+        <img align="center" alt="Usages" src="resources/images/RandomCutForest.png" />
+</details>
+
+- Usages decision tree, under the hood.
+- How anamonly get detected - Let's say to accomodate new data set, which is aanamoly, it required to add new set of branches in decision tree. That is an indication of anamoly 
+
+### PCA in SageMaker
+- PCA (Principle Component Analysis) is a diamentionality reduction technique.
+- so, if avoids crush of diamentionality
+- A Higher dimentional data -> PCA -> 2D, without loosing much information
+- Reduced dimensions are called componnets
+- How its used:
+    - Covariance matrix is created
+    - then, SVD (Singular Value Decomposition) algo to distil that down
+    - Has two modes
+        - Regular: For sparse data and moderate number of observation and feature
+        - Randomized: For large # of overvation and feature, usaes complex algorithms.
+### Factorization Machines 
+- Used for predicting a classification with a sparse test data.
+- Example - Predicting which product from a huge product catelog will have sale etc
+
+### IP Insights
+- Unupervised learning of IP address usage pattern
+- Identifies suspicious behaviour from IP address, like login attemps, account creation etc
+- Used as a security tool
+
+### Reinforcement Learning
+- Example of Pac-man, where a right action is rewarded and wrong action gets penalized.
+- Q-Learnig
+    - A Specific implementation of reinforcement learning
+    - We have:
+        - A Set of env. states - s
+        - A set of possible actions in those states - a
+        - A value of each state/action - Q
+    - Start with Q = 0
+    - Increment Q, when reward received on state/action
+    - Decrement Q, when bad things happe on state/action
     - <details>
-            <summary><i>Usages</i></summary><br>
-            <img align="center" alt="Usages" src="resources/images/RandomCutForest.png" />
+        <summary><i>Exploration Problem</i></summary><br>
+        <img align="center" alt="Usages" src="resources/images/ExplorationProblem.png" />
     </details>
-
-    - Usages decision tree, under the hood.
-    - How anamonly get detected - Let's say to accomodate new data set, which is aanamoly, it required to add new set of branches in decision tree. That is an indication of anamoly 
-
-- PCA in SageMaker
-    - PCA (Principle Component Analysis) is a diamentionality reduction technique.
-    - so, if avoids crush of diamentionality
-    - A Higher dimentional data -> PCA -> 2D, without loosing much information
-    - Reduced dimensions are called componnets
-    - How its used:
-        - Covariance matrix is created
-        - then, SVD (Singular Value Decomposition) algo to distil that down
-        - Has two modes
-            - Regular: For sparse data and moderate number of observation and feature
-            - Randomized: For large # of overvation and feature, usaes complex algorithms.
-- Factorization Machines 
-    - Used for predicting a classification with a sparse test data.
-    - Example - Predicting which product from a huge product catelog will have sale etc
-
-- IP Insights
-    - Unupervised learning of IP address usage pattern
-    - Identifies suspicious behaviour from IP address, like login attemps, account creation etc
-    - Used as a security tool
-
-- Reinforcement Learning
-    - Example of Pac-man, where a right action is rewarded and wrong action gets penalized.
-    - Q-Learnig
-        - A Specific implementation of reinforcement learning
-        - We have:
-            - A Set of env. states - s
-            - A set of possible actions in those states - a
-            - A value of each state/action - Q
-        - Start with Q = 0
-        - Increment Q, when reward received on state/action
-        - Decrement Q, when bad things happe on state/action
-        - <details>
-            <summary><i>Exploration Problem</i></summary><br>
-            <img align="center" alt="Usages" src="resources/images/ExplorationProblem.png" />
-        </details>
-- [IMP]Automatic Model Tuning
-    - How do you know best value of Learning Rate, batch size, pth etc?
-    - By experimenting? Possible then we have handful of hyperparameter. But, what if there are many different hyerparameters.
-    - We can't try every combination of every possible value somehow, train a model, and evaluate every time.
-    - SageMaker can automatically tune model
-        - Define hyperparameter you care about, ranges you care about and metricsyou are optimizing of
-        - SageMaker spins up a 'HyperParameter Tuning Job', that trains many combinations you allowed
-        - the set of hyperparameters producing best results, can then deployed as model
-        - So, it can learn as it goes, so it doesn't have to try very possible combinations.
-    - Taking more time - Limit search space.
-- SageMaker Debugger
-    - Saves internal state at periodic level.
-    - Have reporting capabilities.
-- Autopilot / AutoML
-    - Automates:
-        - Algorithm selection
-        - Data Processing
-        - Model tuning
-        - All Infrastructure
-    - Does all the hit and trial
-- Which SageMaker algorithm would be best suited for identifying topics in text documents in an unsupervised setting?
+### [IMP]Automatic Model Tuning
+- How do you know best value of Learning Rate, batch size, pth etc?
+- By experimenting? Possible then we have handful of hyperparameter. But, what if there are many different hyerparameters.
+- We can't try every combination of every possible value somehow, train a model, and evaluate every time.
+- SageMaker can automatically tune model
+    - Define hyperparameter you care about, ranges you care about and metricsyou are optimizing of
+    - SageMaker spins up a 'HyperParameter Tuning Job', that trains many combinations you allowed
+    - the set of hyperparameters producing best results, can then deployed as model
+    - So, it can learn as it goes, so it doesn't have to try very possible combinations.
+- Taking more time - Limit search space.
+### SageMaker Debugger
+- Saves internal state at periodic level.
+- Have reporting capabilities.
+### Autopilot / AutoML
+- Automates:
+    - Algorithm selection
+    - Data Processing
+    - Model tuning
+    - All Infrastructure
+- Does all the hit and trial
+### Related Questions
+-  Which SageMaker algorithm would be best suited for identifying topics in text documents in an unsupervised setting?
     - (LDA) Latent Dirichlet Allocation is a topic modeling technique. 
     - (NTM) Neural Topic Model would also be a correct answer.
-- 
+
+## AWS SageMaker - High Level AI/ML services
+
+### Amazon Comprehend 
+- Its does NLP and text analysis
+- Inputs 
+    - social media, emails, web pages, documents, transcripts, medical records
+- Outputs
+    - Can extract, key phrases, entities, sentiments, language, syntax, topics and document classifications, 
+    - Can detect events like going IPO, bankcrupt etc
+    - PII identification and redaction
+    - Targeted swntiments for specific entities
+- Can be trained on your own data
+- <details>
+        <summary><i>Entities Detection</i></summary><br>
+        <img align="center" alt="Training Input" src="resources/images/AWS_Comprehend.png" />
+    </details>
+
+### Amazon Translate 
+- Useges Deep Learning, does translations.
+
+### Amazon Transcribe
+- Speach to Text
+- can identify number of speaker etc
+
+### Amazom Polly
+- Text to Speach
+- Polly is a typical sterio name of parot. 
+- <details>
+        <summary><i>Capabilites</i></summary><br>
+        <img align="center" alt="Training Input" src="resources/images/Amazon Polly.png" />
+    </details>  
+### Amazom Rekognition
+- Its computer vision
+- Can be used in:
+    - Facial Analysis
+    - Celebrity recognition
+    - Face Comparison
+    - Text in image
+    - Video Analysis etc
+- Netty Gritty
+    - Image comes from S3, or provide image bytes as part of input. S3 is faster
+    - Facial recognition depends on good lighting, angle, visibility of eyes, resolution etc
+    - Video must come from Kinesis Video Stream
+        - H.264 encoded
+        - 5-30 FPS
+        - Favor resolution over framerate
+    - Can be used with lambda to trigger image analysis upon upload
+
+### Amazom Forecast
+- Time series analysis - fully managed service
+- Uses AutoML (Read above)
+- Works with any time series data - Price, Promotion, economic performance etc
+
+### Amazom Forecast Algorithms
+- CNN-QR, DeepAR+, Prophet, NPTS, ARIMA, ETS
+
+### Amazon Lex
+- ChatBot engine
+- Build as a inner working of Alexa
+
+### [IMP] Amazon Personlize 
+- Fully Managed Recommendation Engine
+- Works on APIs
+- Feed in data via S3 or API Integration
+    - Data could be purchase, rating, impression, cart details etc
+- Provide an explicite schema in Avro format
+- JavaScript or JDK
+- Two main APIs are:
+    - GetRecommedations
+    - GetPersonalizeRating
+- It has CLI and Console access
+- Features
+    - Can get real time or batch recommendations
+    - Handles reco. for new user/item by providing more general reco. because it doesn't have info/trained on new user/item (the cold start problem, typically with any prediciton model). Then every 2 hours it recompute, because someone might have bought the mew item. And new item doesn't stay new for long time.
+    - Similar type 
+    - Ability to take unstructured input text
+    - Intelligent user segmetation (new feature 2022)
+    - Business rule and filters
+    - Trending now
+    - Personlized ranking
+- Terminology
+    - Datasets: User, Items, Interaction
+    -         
